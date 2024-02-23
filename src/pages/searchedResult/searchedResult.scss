@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.banner-section {
+    background: #E6F5F3;
+    padding: 50px 0;
+
+    .title-tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+
+        .MuiTypography-h3 {
+
+            font-family: "Koulen", sans-serif;
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 52px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #232E41;
+            margin: 0;
+
+            span {
+                margin-left: 8px;
+                color: #05C8C6;
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 52px;
+            }
+        }
+
+
+    }
+
+    .time-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #232E41;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        margin-top: 16px;
+        font-style: normal;
+    }
+
+    .custom-wrapper {
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 40px 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-family: "Koulen", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 36px;
+            color: rgba(35, 46, 65, 0.7);
+            padding: 24px 0;
+            margin: 0;
+
+        }
+    }
+}
+
+.loader-linear {
+    position: relative;
+
+    .MuiLinearProgress-root {
+        position: absolute;
+        background: transparent;
+        height: 6px;
+
+        .MuiLinearProgress-bar {
+            background: rgba(5, 200, 198, 1);
+        }
+
+    }
+}
+
+.service-section {
+    padding: 60px 0;
+
+    h4 {
+        font-family: "Koulen", sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 51px;
+        color: rgba(35, 46, 65, 1);
+        margin: 0;
+        text-align: center;
+    }
+
+    h6 {
+        text-align: center;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 450;
+        line-height: 20px;
+        color: rgba(35, 46, 65, 1);
+
+    }
+
+    .card-wrapper {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        .MuiPaper-root {
+            box-shadow: none;
+
+            .MuiCardContent-root {
+                border: 1px solid rgba(35, 46, 65, 0.1);
+                border-radius: 5px;
+                box-shadow: none;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        .serviceIcon {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            border-radius: 50%;
+            box-shadow: 0px 6px 6px 0px rgba(35, 46, 65, 0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .contentTag {
+            width: 80%;
+            font-size: 18px;
+            font-weight: 450;
+            line-height: 23px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: rgba(35, 46, 65, 1);
+        }
+
+    }
+
+    .subtitle-text {
+        color: rgba(35, 46, 65, 0.6);
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .banner-section {
+        padding: 42px 0 0;
+
+        .title-tag {
+            width: 80%;
+            margin: 0 auto;
+
+            .MuiTypography-h3 {
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 34px;
+                text-align: center;
+
+                span {
+
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 34px;
+                    text-align: center;
+                }
+            }
+
+        }
+
+        .time-wrap {
+            margin-top: 8px;
+        }
+
+        .custom-wrapper {
+            padding: 30px 20px;
+            box-sizing: border-box;
+        }
+    }
+
+    .service-section {
+        padding: 24px 0;
+
+        h4 {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 8px;
+        }
+
+        h6 {
+            font-size: 16px;
+            line-height: normal;
+        }
+
+        .card-wrapper {
+            padding-top: 24px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+
+            .MuiPaper-root {
+                .MuiCardContent-root {
+                    gap: 10px;
+                    padding: 15px;
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+            .serviceIcon {
+                width: 40px;
+                height: 40px;
+                min-width: 40px;
+
+            }
+
+            .contentTag {
+                .MuiTypography-subtitle1 {
+                    width: 80%;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    color: rgba(35, 46, 65, 1);
+
+                    span {
+                        font-size: 12px;
+                        font-weight: 450;
+                        line-height: 15px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .loader-linear {
+        position: relative;
+
+        .MuiLinearProgress-root {
+            position: absolute;
+            background: transparent;
+            height: 4px;
+
+            .MuiLinearProgress-bar {
+                background: rgba(5, 200, 198, 1);
+            }
+
+        }
+    }
+
+}

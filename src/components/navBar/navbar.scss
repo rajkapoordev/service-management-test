@@ -1,0 +1,112 @@
+.navbarWrapper {
+    display: flex;
+    border-bottom: 2px solid rgba(35, 46, 65, 0.10);
+
+    header {
+        background: #fff;
+        box-shadow: none;
+        border: none;
+    }
+
+    .toolbarWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            p {
+                color: #232E41;
+                font-size: 24px;
+                line-height: 43px;
+                font-weight: 400;
+                font-family: "Koulen", sans-serif;
+            }
+        }
+    }
+
+    .MuiFormControl-root {
+        label {
+            color: #fff;
+            background: #232E41;
+        }
+    }
+
+    .MuiInputBase-root {
+        &:hover {
+            .MuiOutlinedInput-notchedOutline {
+                border-color: #232E41;
+            }
+        }
+
+        .MuiSelect-select {
+            color: #232E41;
+        }
+
+        &.Mui-focused {
+            .MuiOutlinedInput-notchedOutline {
+                border-color: #232E41;
+            }
+        }
+
+        .MuiOutlinedInput-notchedOutline {
+            border-color: #fff;
+
+            legend {
+                span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .content-btn {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        background: #05C8C6;
+        border-radius: 5px;
+        font-family: "Koulen", sans-serif;
+
+        .MuiButtonBase-root {
+            color: #fff;
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            &:hover {
+                background: #232E41;
+                color: #fff;
+            }
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 20px;
+            font-family: "Koulen", sans-serif;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .navbarWrapper {
+        header {
+            .toolbarWrap {
+                padding: 0;
+
+                .content-btn {
+                    .MuiButtonBase-root {
+                        border-radius: 8px;
+                        padding: 8px;
+                        min-width: unset;
+                    }
+
+                    .number {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
