@@ -28,7 +28,7 @@ export default function AutocompleteComponent() {
         getOptionLabel={(option: any) => option.title}
         sx={{ width: 300 }}
         renderInput={(params) => <TextField {...params} label={(showLable && !searchObj) ? "What do you need help with?" : ""} />}
-        onChange={(event: React.SyntheticEvent, value: any) => { setSearchObj(typeof value === 'string' ? ({ title: value, groupBy: '' }) : value) }}
+        onChange={(_: React.SyntheticEvent, value: any) => { setSearchObj(typeof value === 'string' ? ({ title: value, groupBy: '' }) : value) }}
         value={searchObj || { title: '', groupBy: '' }}
         onFocus={() => { setShowLabel(false) }}
         onBlur={() => { setShowLabel(true) }}

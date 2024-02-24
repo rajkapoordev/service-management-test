@@ -5,6 +5,6 @@ export type PropsType = {
 }
 
 export type ContextCType = {
-    searchObj: { title: '', groupBy: '' };
-    setSearchObj: Dispatch<SetStateAction<string>>
+    searchObj: { title: '', groupBy: '' } | any;
+    setSearchObj: Dispatch<SetStateAction<string>> | any;
 }

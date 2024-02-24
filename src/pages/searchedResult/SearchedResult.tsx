@@ -46,7 +46,7 @@ export const SearchedResult: FC = () => {
                     </Typography>
 
                     <Typography className='subtitle-text' variant="subtitle1" gutterBottom>
-                        Join 3000+ Fantastic Club members and access  premium benefits for only 89/year
+                        Join 3000+ Fantastic Club members and access  premium benefits for only £89/year
                     </Typography>
 
                     <Box className="card-wrapper">
